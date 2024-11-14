@@ -40,7 +40,12 @@ const Modal = () => {
         <div className="modal" style={{ opacity: 1 }}>
           <div style={{ display: "flex" }}>
             <h1>Heading</h1>
-            <span>X</span>
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={() => setShowModal(false)}
+            >
+              X
+            </span>
           </div>
           Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
           sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
