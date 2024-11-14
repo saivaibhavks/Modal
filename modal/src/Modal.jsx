@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "./Modal.css";
 
 const Modal = () => {
   const [shoModal, setShowModal] = useState(false);
+
+  const ref = useRef(null);
+
+  console.log("ref", ref);
+
+  const modalId = document.querySelector("#modal");
+  console.log("id", modalId);
   return (
     <div className="main">
       <div
@@ -35,9 +42,69 @@ const Modal = () => {
           sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
           dolor sint.
         </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
       </div>
       {shoModal && (
-        <div className="modal" style={{ opacity: 1 }}>
+        <div id="modal" ref={ref} className="modal" style={{ opacity: 1 }}>
           <div style={{ display: "flex" }}>
             <h1>Heading</h1>
             <span
