@@ -4,7 +4,7 @@ import "./Modal.css";
 const Modal = () => {
   const [shoModal, setShowModal] = useState(false);
   return (
-    <>
+    <div className="main">
       <div
         className="container"
         style={shoModal ? { opacity: 0.5 } : { opacity: 1 }}
@@ -52,7 +52,7 @@ const Modal = () => {
           dolor sint.
         </div>
       )}
-    </>
+    </div>
   );
 };
 
