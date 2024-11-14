@@ -1,7 +1,11 @@
 import "./Modal.css";
 
 const Modal = () => {
-  return <h1>Modal</h1>;
+  return (
+    <div className="container">
+      <button>Click me</button>
+    </div>
+  );
 };
 
 export default Modal;
