@@ -102,6 +102,11 @@ const Modal = () => {
           sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
           dolor sint.
         </p>
+        <p>
+          Irure dolor dolor duis laboris adipisicing est ipsum id amet dolor
+          sint. Irure dolor dolor duis laboris adipisicing est ipsum id amet
+          dolor sint.
+        </p>
       </div>
       {shoModal && (
         <div id="modal" ref={ref} className="modal" style={{ opacity: 1 }}>
